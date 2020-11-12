@@ -1,0 +1,73 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<main>
+  <h1 id="title">Language Exchange Partner Questionnaire</h1>
+  <p id="description">Please answer these questions to help us find the most suitable language exchange partner for you. Currently, we only have partners available for the languages listed on the form. However, if you you have a different target language and/or are a native speaker of a language not currently on the list, please select 'None of the above' and tell us your native language and your target language(s) in the last section of this questionnare.</p>
+  <form id="survey-form">
+    <div class='row'>
+      <label id="name-label" for="name" class="col-25">* Name: </label>
+      <input autofocus type="text" id="name" name="name" required placeholder="Maria" class="short-a" class="col-75"><br>
+    </div>
+    <div class='row'>
+      <label id="email-label" for="email" class="col-25">* Email:  </label>
+      <input type="email" id="email" name="email" required placeholder="maria@email.com" class="short-a" class="col-75"><br>
+    </div>
+    <div class='row'>
+      <label id="number-label" for="number">How many times a week do you want to meet your language exchange partner?</label>
+      <input type="number" min="1" max="7" id="number" name="number" placeholder="1" class="short-a"><br>
+    </div>
+    <div class='row'>
+      <fieldset>
+        <legend>Is it important to you that your language exchange partner be a native speaker?</legend>  
+          <label for="yes">
+          <input id="yes" type="radio" name="native" value="yes">Yes
+        </label>
+    <br>
+       <label for="no">
+         <input id="no" type="radio" name="native" value="no" checked>No
+       </label>
+      </fieldset>
+    </div>
+    <div class='row'>
+      <label for="dropdown">What is your native language?</label>
+      <select id="dropdown">
+        <option value="English">English</option>
+        <option value="Spanish">Spanish</option>
+        <option value="Portuguese">Portuguese</option>
+        <option value="French">French</option>
+        <option value="German">German</option>
+        <option value="Mandarin">Mandarin</option>
+        <option value="Arabic">Arabic</option>
+        <option value="Russian">Russian</option>
+        <option value="none">None of the above</option>
+      </select>
+    </div>
+    <div class='row'>
+      <fieldset>
+        <legend>What is/are your target language(s)?</legend>  
+          <label for="English"><input id="English" type="checkbox" name="target" value="English">English</label><br>
+          <label for="Spanish"><input id="Spanish" type="checkbox" name="target" value="Spanish">Spanish</label><br>
+          <label for="Portuguese"><input id="Portuguese" type="checkbox" name="target" value="Portuguese">Portuguese</label><br>
+          <label for="French"><input id="French" type="checkbox" name="target" value="French">French</label><br>
+          <label for="German"><input id="German" type="checkbox" name="target" value="German">German</label><br>
+          <label for="Mandarin"><input id="Mandarin" type="checkbox" name="practice" value="Mandarin">Mandarin</label><br>
+          <label for="Arabic"><input id="Arabic" type="checkbox" name="practice" value="Arabic">Arabic</label><br>
+          <label for="Russian"><input id="Russian" type="checkbox" name="practice" value="Russian">Russian</label><br>
+          <label for="none"><input id="none" type="checkbox" name="practice" value="none">None of the above</label><br>
+      </fieldset>
+    </div>
+    <div class='row'>
+      <label for="date">When would you like to have your first language exchange meeting?</label><br>
+      <input type="date" id="date" name="date">
+    </div>
+    <div class='row'>
+      <label for="interests">What are your interests and hobbies?</label>
+      <textarea id="interests" placeholder="Write your answer here"> </textarea>
+    </div>
+    <div class='row'>
+      <label for="preferences">Tell us about your preferences in a language exchange partner.</label>
+      <textarea id="preferences" placeholder="Write your preferences here"> </textarea>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</main>
