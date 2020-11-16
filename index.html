@@ -15,11 +15,13 @@
     <form id="survey-form">
       <div class='form-group'>
         <label id="name-label" for="name">* First name</label>
-        <input autofocus type="text" id="name" name="name" required placeholder="Your name"><br>
+        <input autofocus type="text" id="name" name="name" placeholder="Your name"
+        required minlength="2"><br>
       </div>
       <div class='form-group'>
         <label id="email-label" for="email">* Email</label>
-        <input type="email" id="email" name="email" required placeholder="person@email.com"><br>
+        <input type="email" id="email" name="email" placeholder="person@email.com"
+          required><br>
       </div>
       <div class='form-group'>
         <label id="number-label" for="number">How many times a week do you want to meet your language exchange partner?</label>
@@ -38,8 +40,8 @@
         </fieldset>
       </div>
       <div class='form-group'>
-        <label for="dropdown">What is your native language?</label>
-        <select id="dropdown">
+        <label for="dropdown">* What is your native language?</label>
+        <select id="dropdown" required>
           <option value="English">English</option>
           <option value="Spanish">Spanish</option>
           <option value="Portuguese">Portuguese</option>
@@ -52,8 +54,8 @@
         </select>
       </div>
       <div class='form-group'>
-        <fieldset>
-          <legend>What is/are your target language(s)?</legend>  
+        <fieldset required>
+          <legend>* What is/are your target language(s)?</legend>  
             <label for="English"><input id="English" type="checkbox" name="target" value="English">English</label><br>
             <label for="Spanish"><input id="Spanish" type="checkbox" name="target" value="Spanish">Spanish</label><br>
             <label for="Portuguese"><input id="Portuguese" type="checkbox" name="target" value="Portuguese">Portuguese</label><br>
