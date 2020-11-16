@@ -153,15 +153,18 @@ textarea {
   outline: none;
 }
 
-/* @media screen and (max-width: 500px) {
-    .col-25 { 
-      width: 100%;
-      margin-top: 0;
-      padding-bottom: 0.25rem;
-} 
-    .col-75 { 
-      width: 100%;
-      margin-top: 0;
-      padding-bottom: 0.25rem;
-} 
-} */
+@media screen and (max-width: 500px) {
+
+  main {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 95%;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 30px 10px rgba(0,0,0,0.4);  
+  }     
+    
+}
